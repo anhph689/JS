@@ -29,3 +29,10 @@
 - divison: khu vực
 - block: khối
 - semantic: thẻ ngữ nghĩa
+
+# CSS
+
+- sheet: bản, tấm
+- cascade: thác nước
+- specific: cụ thể
+- flexible: linh hoạt
