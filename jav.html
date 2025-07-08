@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Nhập tên: <input id="input" value>
+    <br>
+    <button onclick="xin_chao()">OK</button>
+    <div id="loi_chao"></div>
+
+    <script>
+        // var tuoi = 0
+        // var co_hang_xom = {
+        //     ten: "Lan",
+        //     tuoi: 18,
+        //     hon_nhan: false,
+        //     dia_chi: {
+        //         quan: "Cau Giay",
+        //         phuong: "Mai Dich"
+        //     }
+        // }
+        // var tinh_tuoi = function(nam_sinh){
+        //     //var  = parseInt(window.prompt("Nhập năm sinh:"))
+        //     tuoi = 2023 - nam_sinh
+            
+        //     return tuoi
+        // }
+        
+        // document.write(tinh_tuoi(2000), "<br>")
+        // document.write(tinh_tuoi(1992), "<br>")
+
+        // var a = [123, true, "Eimi Fukada", "Maria"]
+        // var s = "Fukada 12 3"
+        // document.write(s.length)
+
+        var xin_chao = function(){
+            var ten = document.getElementById("input").value
+            var loi_chao = "Xin chào " + ten
+            document.getElementById("loi_chao").innerHTML = loi_chao
+        }
+        var thong_bao = function(){
+            document.getElementById("loi_chao").innerHTML += "Hết giờ!<br>"
+        }
+        setTimeout(thong_bao , 3000)
+
+        document.getElementById("loi_chao").innerHTML += "Xin chào<br>"
+        // localStorage.ten = "Vu Nguyen Coder"
+        // localStorage.diachi = "Ha Noi"
+    </script>
+</body>
+</html>
