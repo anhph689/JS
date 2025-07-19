@@ -40,7 +40,7 @@ $(document).ready(function(){
         if(board[row][col] !== null || gameOver) return
 
         board[row][col] = currentPlayer
-        const $cell = $boardElement.find('[data-row=${row}][]')
+        const $cell = $boardElement.find(`[data-row=${row}][data-col=${col}]`)
         currentPlayer = currentPlayer == "X" ? "O" : "x"
         console.log(board);
     }
